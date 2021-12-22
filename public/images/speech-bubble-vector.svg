@@ -1,0 +1,50 @@
+<?xml version="1.0"?><svg width="700" height="600" xmlns="http://www.w3.org/2000/svg">
+ <title>speech bubble</title>
+ <defs>
+  <linearGradient id="svg_2">
+   <stop stop-color="#000000" offset="0"/>
+   <stop stop-color="#ffffff" offset="1"/>
+  </linearGradient>
+  <linearGradient id="svg_3" x1="0" y1="0" x2="1" y2="0" spreadMethod="pad">
+   <stop stop-color="#000000" offset="0"/>
+   <stop stop-color="#ffffff" offset="0"/>
+  </linearGradient>
+  <linearGradient id="svg_4" x1="0" y1="0" x2="1" y2="0" spreadMethod="pad">
+   <stop stop-color="#000000" offset="0"/>
+   <stop stop-color="#ffffff" offset="1"/>
+  </linearGradient>
+  <linearGradient id="svg_5" x1="1" y1="0.023438" x2="1" y2="0" spreadMethod="pad">
+   <stop stop-color="#000000" offset="0"/>
+   <stop stop-color="#ffffff" offset="1"/>
+  </linearGradient>
+  <linearGradient id="svg_6" x1="1" y1="0" x2="1" y2="0" spreadMethod="pad">
+   <stop stop-color="#000000" offset="0"/>
+   <stop stop-color="#ffffff" offset="1"/>
+  </linearGradient>
+  <linearGradient id="svg_7" x1="1" y1="0" spreadMethod="pad">
+   <stop stop-color="#006bb6" offset="0"/>
+   <stop stop-color="#006bb6" stop-opacity="0.996094" offset="1"/>
+  </linearGradient>
+  <linearGradient id="svg_8" x1="0.570313" y1="0.699219" x2="0.578125" y2="0.699219" spreadMethod="pad">
+   <stop stop-color="#000000" offset="0"/>
+   <stop stop-color="#ffffff" offset="1"/>
+  </linearGradient>
+  <radialGradient id="svg_9" spreadMethod="pad" cx="0.0625" cy="0.5">
+   <stop stop-color="#000000" offset="0"/>
+   <stop stop-color="#ffffff" offset="1"/>
+  </radialGradient>
+  <radialGradient id="svg_10" spreadMethod="pad" cx="0.5" cy="0.5" r="0.5">
+   <stop stop-color="#000000" offset="0"/>
+   <stop stop-color="#ffffff" offset="1"/>
+  </radialGradient>
+  <linearGradient id="svg_11" spreadMethod="pad" x1="1" y1="0">
+   <stop stop-color="#000000" offset="0"/>
+   <stop stop-color="#ffffff" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <path d="m102.974792,76.993683c-22.159973,0 -40.000004,17.839996 -40.000004,40l0,239.583862c0,22.160004 17.840031,40.000031 40.000004,40.000031l126.835815,0l-17.12085,103.648804l98.044495,-103.648804l299.583862,0c22.159973,0 40,-17.840027 40,-40.000031l0,-239.583862c0,-22.160004 -17.840027,-40 -40,-40l-507.343323,0z" id="path575" stroke="url(#svg_11)" stroke-width="16.5" fill-rule="evenodd" fill="#7f7f7f" stroke-opacity="0.52"/>
+  <rect id="svg_1" height="0" width="2" y="52" x="-205" fill-opacity="0.75" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="7.5" stroke="#000000" fill="none"/>
+ </g>
+</svg>
