@@ -1,0 +1,11 @@
+{
+  "name": "random-quote-generator",
+  "version": "1.0.0",
+  "description": "Random Quote Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason JF",
+  "license": "ISC"
+}
