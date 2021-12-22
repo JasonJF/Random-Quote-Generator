@@ -1,10 +1,27 @@
+/* Fonts */
+/* font-family: 'Quando', serif; */
+/* font-family: 'Quantico', sans-serif; */
+
 body {
+    font-family: 'Quando', serif;
     width: 100%;
     height: 100%;
     background: linear-gradient(153.96deg, #84FAB0 16.41%, #8FD3F4 86.99%);
 }
+.pageWrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+h5 {
+    color: white;
+}
 .navbar-nav {
     flex-direction: row;
+}
+.navbar-brand {
+    color: white;
 }
 .wrapper {
     display: flex;
@@ -23,6 +40,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     /* background-color: #FFEEFF; */
 }
 .speechBubble {
@@ -32,13 +50,48 @@ body {
     max-height: 300px;
     z-index: -1;
 }
+/* below code adapted from https://projects.verou.me/bubbly/ */
+.speech-bubble {
+	position: relative;
+	background: white;
+	border-radius: .4em;
+    padding: 2%;
+    margin-bottom: 2%;
+    width: 45%;
+    
+    box-shadow: 11px 11px 10px rgba(0, 0, 0, 0.12);
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: white;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+/* End of copied code */
 .quoteWrapper {
     background-color: white;
     border-radius: 25px;
-    padding: 5%;
-    max-width: 100%;
+    padding: 2%;
+    margin-bottom: 3%;
+    max-width: 50%;
     max-height: 100%;
     overflow: hidden;
+    box-shadow: 11px 11px 10px rgba(0, 0, 0, 0.12);
+}
+.quote {
+    text-align: justify;
+}
+.authorName {
+    text-align: left;
 }
 .buttonWrapper {
     margin-top: 15px;
@@ -50,4 +103,10 @@ body {
 .quoteBtn {
     background-color: #F28DD6;
     color: white;
+}
+.footer {
+    height: auto;
+}
+.copyright {
+    color: #ffffffb0;
 }
