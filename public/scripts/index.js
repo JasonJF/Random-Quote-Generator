@@ -1,6 +1,7 @@
 //button click
 const getNewQuote = async () => {
     
+    // const response = await fetch('http://api.quotable.io/random');
     const response = await fetch('http://api.quotable.io/random');
     const quoteData = await response.json(); //extract JSON from the http response
    
@@ -15,7 +16,7 @@ const getNewQuote = async () => {
 
   //flip card
   function flipCard() {
-    console.log("flip card");
+    // console.log("flip card");
     $(".about-wrapper").toggleClass("hidden");
     $(".speech-bubble").toggleClass("hidden");
     $(".buttonWrapper").toggleClass("hidden");
