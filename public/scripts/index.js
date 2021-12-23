@@ -10,5 +10,13 @@ const getNewQuote = async () => {
 
     //update DOM
     $(".quote").text('"' + newQuote + '"');
-    $(".authorName").text('-' + author);
+    $(".authorName").html('<em>-' + author + '</em>');
+  }
+
+  //flip card
+  function flipCard() {
+    console.log("flip card");
+    $(".about-wrapper").toggleClass("hidden");
+    $(".speech-bubble").toggleClass("hidden");
+    $(".buttonWrapper").toggleClass("hidden");
   }

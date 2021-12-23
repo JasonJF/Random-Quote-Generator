@@ -9,6 +9,8 @@ app.use(express.static("public"));
 //Home Route
 app.get("/", (req,res) => {
     res.sendFile(__dirname + "/index.html");
+
+    // getNewQuote();
 });
 
 //API routes
