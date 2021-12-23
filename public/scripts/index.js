@@ -17,7 +17,15 @@ const getNewQuote = async () => {
   //flip card
   function flipCard() {
     // console.log("flip card");
-    $(".about-wrapper").toggleClass("hidden");
-    $(".speech-bubble").toggleClass("hidden");
-    $(".buttonWrapper").toggleClass("hidden");
+    if($(".speech-bubble").hasClass("hidden")){
+      $(".about-wrapper").hide(10);
+      $(".speech-bubble").toggleClass("hidden");
+      $(".buttonWrapper").toggleClass("hidden");
+    } else {
+      $(".speech-bubble").toggleClass("hidden");
+      $(".buttonWrapper").toggleClass("hidden");
+      $(".about-wrapper").fadeIn();
+      
+    }
+    
   }
