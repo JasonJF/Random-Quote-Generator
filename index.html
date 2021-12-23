@@ -21,29 +21,19 @@
             <div class="wrapper">
                 <a class="navbar-brand" href="" id="logo">Random Quote Generator</a>
             </div>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-links">
+                    <a id="about-button" onclick="flipCard()">About</a>
+                </li>
+            </ul>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                </ul>
-            </div>
         </nav>
         <!-- Main Content -->
         <div class="container-fluid mainContent">
             <div class="about-wrapper hidden">
                 <p>Hi, I'm Jason.</p>
-                <p>This Random Quote Generator is a mini project that I've created to learn about full-stack development as well as API's.</p>
+                <p>This Random Quote Generator is a mini project that I've created to learn about full-stack development
+                    as well as API's.</p>
                 <p>Here are some of the tech I used in this site:</p>
                 <h4>Bootstrap</h4>
                 <p>I decided to use Bootstrap to make it easier for me to make the site responsive.</p>
@@ -52,7 +42,8 @@
                 <h4>Heroku</h4>
                 <p>To deploy my app on the web I made use of Heroku</p>
                 <h4>API</h4>
-                <p>The API that I used to generate the random quotes comes from https://github.com/lukePeavey/quotable.</p>
+                <p>The API that I used to generate the random quotes comes from https://github.com/lukePeavey/quotable.
+                </p>
             </div>
             <div class="speechBubbleWrapper">
                 <!-- <img class="speechBubble" src="images/speech-bubble-vector.svg" alt=""> -->
@@ -62,14 +53,11 @@
                     </p>
                     <p class="authorName"><em> - Lin-Manuel Miranda</em></p>
                 </div>
-                
+
             </div>
 
             <div class="buttonWrapper">
-                <div class="container-fluid p-2">
-                    <button class="btn btn-lg quoteBtn m-2" onclick="getNewQuote()">Next Quote</button>
-                    <a id="about-button" onclick="flipCard()">About</a>
-                </div>
+                <button class="btn btn-lg quoteBtn m-2" onclick="getNewQuote()">Next Quote</button>
             </div>
         </div>
         <!-- Footer -->
