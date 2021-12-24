@@ -52,10 +52,9 @@ h5 {
 .speechBubbleWrapper {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     height: 40vh;
-    /* background-color: #FFEEFF; */
 }
 .speechBubble {
     position: absolute;
@@ -107,7 +106,6 @@ h5 {
     text-align: left;
 }
 .about-wrapper {
-    /* position: absolute; */
     top: 0;
     left: 0;
     width: 90%;
@@ -139,7 +137,7 @@ h5 {
     color: #ffffffb0;
 }
 .hidden {
-    /* visibility: hidden; */
+    
     display: none;
 }
 /* Animations */

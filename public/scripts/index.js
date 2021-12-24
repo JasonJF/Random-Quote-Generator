@@ -1,8 +1,11 @@
-//button click
+//Get new quote on document load
+$( document ).ready(() => {
+  getNewQuote();
+})
+//get a new quote when button is clicked
 const getNewQuote = async () => {
     
-    // const response = await fetch('http://api.quotable.io/random');
-    const response = await fetch('http://api.quotable.io/random');
+    const response = await fetch('/newQuote');
     const quoteData = await response.json(); //extract JSON from the http response
    
     //store quotes
@@ -16,7 +19,7 @@ const getNewQuote = async () => {
 
   //flip card
   function flipCard() {
-    // console.log("flip card");
+    
     if($(".speech-bubble").hasClass("hidden")){
       $(".about-wrapper").hide(10);
       $(".speech-bubble").toggleClass("hidden");
