@@ -2,9 +2,11 @@
 const getNewQuote = async () => {
     
     // const response = await fetch('http://api.quotable.io/random');
-    const response = await fetch('http://api.quotable.io/random');
+    const response = await fetch('/newQuote');
     const quoteData = await response.json(); //extract JSON from the http response
    
+    // console.log(response);
+    // console.log(quoteData);
     //store quotes
     let newQuote = quoteData.content;
     let author = quoteData.author;

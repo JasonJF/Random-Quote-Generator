@@ -14,18 +14,32 @@ app.get("/", (req,res) => {
 });
 
 //API routes
-app.post("/", (req,res) => {
+app.get("/newQuote", (req,res) => {
+
+    let parsedData = {};
 
     console.log("Quote button pressed.")
     const url = "http://api.quotable.io/random";
 
     http.get(url, (response) => {
         response.on("data", (data) => {
-            const parsedData = JSON.parse(data);
-            console.log(parsedData);
+            parsedData = JSON.parse(data)
+            const stringData = JSON.stringify(data);
+            console.log("Inside response");
+            console.log(data);
+            res.send(data);
+            // res.end(data);
         });
+        // console.log("Inside http");
+        // console.log(parsedData);
     });
+
+    // console.log("Inside get");
+    // console.log(parsedData);
+    // res.send(res.status);
+    // res.redirect("/");
 });
+
 app.listen(3000, () => {
     console.log("Server started on port 3000");
 });
