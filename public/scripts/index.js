@@ -20,13 +20,11 @@ const getNewQuote = async () => {
   //flip card
   function flipCard() {
     
-    if($(".speech-bubble").hasClass("hidden")){
+    if($(".mainQuoteWrapper").hasClass("hidden")){
       $(".about-wrapper").hide(10);
-      $(".speech-bubble").toggleClass("hidden");
-      $(".buttonWrapper").toggleClass("hidden");
+      $(".mainQuoteWrapper").toggleClass("hidden");
     } else {
-      $(".speech-bubble").toggleClass("hidden");
-      $(".buttonWrapper").toggleClass("hidden");
+      $(".mainQuoteWrapper").toggleClass("hidden");
       $(".about-wrapper").fadeIn();
       
     }

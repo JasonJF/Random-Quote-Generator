@@ -29,7 +29,11 @@ h5 {
     background-color: #0000001f;
 }
 #myNavBar {
+    position: absolute;
+    top: 0;
+    left: 0;
     text-align: center;
+    width: 100%;
 }
 .nav-item {
     color: white;
@@ -44,8 +48,14 @@ h5 {
     align-items: center;
 }
 .mainContent {
-    height: 70vh;
+    height: 85vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mainQuoteWrapper {
+    display: flex;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
 }
@@ -54,7 +64,7 @@ h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 65vh;
 }
 .speechBubble {
     position: absolute;
@@ -106,7 +116,8 @@ h5 {
     text-align: left;
 }
 .about-wrapper {
-    top: 0;
+    position: relative;
+    top: 3%;
     left: 0;
     width: 90%;
     margin: auto;
@@ -120,7 +131,7 @@ h5 {
 .buttonWrapper {
     margin-top: 15px;
     display: flex;
-    height: 30vh;
+    height: 20vh;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;

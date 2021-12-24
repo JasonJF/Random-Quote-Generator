@@ -18,15 +18,12 @@ app.get("/newQuote", (req,res) => {
 
     let parsedData = {};
 
-    console.log("Quote button pressed.")
     const url = "http://api.quotable.io/random";
 
     http.get(url, (response) => {
         response.on("data", (data) => {
             parsedData = JSON.parse(data)
             const stringData = JSON.stringify(data);
-            console.log("Inside response");
-            console.log(data);
             res.send(data);
         });
     });
