@@ -1,7 +1,15 @@
 //Get new quote on document load
 $( document ).ready(() => {
+  //update copyright
+  const year = new Date().getFullYear();
+  $('.copyright').text(`Copyright © ${year} Jason JF `);
+  // console.log(year);
+
+
+  //get a new quote
   getNewQuote();
-})
+});
+
 //get a new quote when button is clicked
 const getNewQuote = async () => {
     
